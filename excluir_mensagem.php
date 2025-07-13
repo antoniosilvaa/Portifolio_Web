@@ -18,7 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id'])) {
     } else {
         echo "Erro ao excluir: " . $conn->error;
     }
-    echo "<a href='ver_mensagens.php'>Voltar</a>";
+    header("Location: ver_mensagens.php");
+    exit();
 } else {
     echo "Requisição inválida.";
 }
