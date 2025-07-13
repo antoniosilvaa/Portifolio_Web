@@ -2,13 +2,31 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contato do portfólio pessoal de um desenvolvedor web.">
+    <link rel="stylesheet" href="styles.css">
     <title>Contato</title>
 </head>
 <body>
-    <h2>Entre em contato</h2>
-    <form action="processa.php" method="POST">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
+    <header>
+        <h1>Contato</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="paginaInicial.html">Início</a></li>
+            <li><a href="contato.html" target="_blank">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Fale comigo</h2>
+            <p>Se você tiver alguma dúvida ou quiser entrar em contato, preencha o formulário abaixo.</p>
+        </section>
+        <section>
+            <h2>Formulário de Contato</h2>
+            <form action="processa.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
 
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required><br><br>
@@ -18,5 +36,9 @@
 
         <button type="submit">Enviar</button>
     </form>
+
+    <footer>
+        <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
